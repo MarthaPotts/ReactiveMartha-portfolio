@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReactiveMartha-portfolio Mock</title>
+    <style>
+        .header-container, 
+        .footer-container {
+            border: double 5px lightgray;
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            margin: 10px; 
+            padding: 30px;
+            background-color: lightcyan;
+            /* box-shadow: inset 0 0 10px; */
+            box-shadow: 5px 5px 10px;
+            flex-shrink 0;   
+
+        }
+        html, body {
+            background-color: lightskyblue;
+            width: 100%;
+            height: 100%;  
+        }
+         .main-container {
+             /* display:flex;
+             flex-direction: column; */
+            flex-grow: 1;
+            flex-shrink: 0;
+            padding: 10px;
+            text-shadow: 1px 1px 2px darkslategray; 
+             color: white;
+             font-weight: bolder;
+             font-size: larger;       
+         }
+         .hello {
+             display: flex; 
+             justify-content: flex-start;
+             border: solid 1px black;
+             text-shadow: 1px 1px 2px darkslategray; 
+             color: white;  
+         }
+         .world {
+             /* display: flex; 
+             justify-content: flex-end;  */
+             border: solid 1px black;
+             text-shadow: 1px 1px 2px darkslategray; 
+             color: white;  
+         }
+         .wrapper {
+             display: flex;
+             min-height: 100%; 
+             flex-direction: column;
+             align-items: stretch; 
+         }
+         .subjects-display-container {
+             display: flex; 
+             flex-direction: column wrap; 
+         }
+         
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+    <div class="header-container">
+        <header class="header-title">
+            <textarea class="txt-header" placeholder="Header...(Required)"></textarea>
+        </header>
+    </div>
+    <main class="main-container">
+        <div class="hello">
+            <h1>< Hello ...</h1>
+        </div>
+        <div id="subjects-display-container">Going to put an array in here </div>
+        <div class="world">
+            <h2>... World /></h2>
+        </div>
+    </main>
+    <div class="footer-container">
+    <footer class="footer-title">
+        <textarea class="txt-footer" placeholder="Footer...(Required)"></textarea>
+    </footer>
+    </div>
+    </div>
+    <script src="mock.js"></script>
+    <script src="subjects.js"></script>
+</body>
+</html>
